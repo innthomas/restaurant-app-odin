@@ -12,6 +12,7 @@ const menuDiv = document.createElement('button');
 menuDiv.setAttribute('class', 'menuNav');
 const contactDiv = document.createElement('button');
 const mainElement = document.createElement('main');
+mainElement.setAttribute('id', 'restaurant');
 contactDiv.setAttribute('class', 'contactNav');
 
 nav.appendChild(homeDiv);
@@ -25,7 +26,7 @@ container.appendChild(mainElement);
 homeDiv.innerHTML = 'home';
 menuDiv.innerHTML = 'menu';
 contactDiv.innerHTML = 'contact';
-
 homeDiv.addEventListener('click',home);
 menuDiv.addEventListener('click',menu);
 contactDiv.addEventListener('click',contact);
+home()
